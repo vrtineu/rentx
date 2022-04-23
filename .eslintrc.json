@@ -56,7 +56,7 @@
         "newlinesBetween": "always",
         "groups": [
           "module",
-          "/^@shared/",
+          "/^@/",
           [
             "parent",
             "sibling",
@@ -73,7 +73,8 @@
       "error",
       {
         "devDependencies": [
-          "**/*.spec.js"
+          "**/*.spec.js",
+          "jest.config.ts"
         ]
       }
     ],
