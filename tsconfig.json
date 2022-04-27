@@ -9,6 +9,7 @@
     "emitDecoratorMetadata": true,
     "resolveJsonModule": true,
     "experimentalDecorators": true,
+    "outDir": "./dist",
     "baseUrl": "./src",
     "paths": {
       "@modules/*": [
