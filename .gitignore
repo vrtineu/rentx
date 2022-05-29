@@ -1,4 +1,4 @@
 node_modules
 .vscode
 yarn.lock
-yarn-error.lock
+yarn-error.log
