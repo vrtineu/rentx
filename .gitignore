@@ -1,5 +1,7 @@
 node_modules
 .vscode
 .env
-tmp
+tmp/*
 dist
+!tmp/.gitkeep
+ormconfig.json
