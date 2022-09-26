@@ -29,6 +29,8 @@ class RefreshTokenUseCase {
       secret_refresh_token,
       expires_refresh_token_days,
       expires_in_refresh_token,
+      expires_in_token,
+      secret_token,
     } = auth;
 
     const { email, sub } = verify(token, secret_refresh_token) as IPayload;
@@ -58,14 +60,14 @@ class RefreshTokenUseCase {
       user_id,
     });
 
-    const newToken = sign({}, auth.secret_token, {
+    const newToken = sign({}, secret_token, {
       subject: user_id,
-      expiresIn: auth.expires_in_token,
+      expiresIn: expires_in_token,
     });
 
     return {
-      token: newToken,
       refresh_token,
+      token: newToken,
     };
   }
 }
