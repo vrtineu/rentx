@@ -12,9 +12,7 @@
   "paths": {
     "/categories": {
       "post": {
-        "tags": [
-          "Category"
-        ],
+        "tags": ["Category"],
         "summary": "Create a category",
         "description": "Create a new category",
         "security": [
@@ -53,9 +51,7 @@
         }
       },
       "get": {
-        "tags": [
-          "Category"
-        ],
+        "tags": ["Category"],
         "summary": "List all categories",
         "description": "List all categories",
         "responses": {
@@ -85,9 +81,7 @@
     },
     "/categories/import": {
       "post": {
-        "tags": [
-          "Category"
-        ],
+        "tags": ["Category"],
         "summary": "Upload a new category",
         "description": "Upload a new category",
         "security": [
@@ -119,9 +113,7 @@
     },
     "/specifications": {
       "post": {
-        "tags": [
-          "Specifications"
-        ],
+        "tags": ["Specifications"],
         "summary": "Create a specification",
         "description": "Create a new specification",
         "security": [
@@ -150,9 +142,7 @@
     },
     "/sessions": {
       "post": {
-        "tags": [
-          "Sessions"
-        ],
+        "tags": ["Sessions"],
         "summary": "Authentication user",
         "description": "Authentication user",
         "requestBody": {
@@ -184,9 +174,7 @@
     },
     "/cars": {
       "post": {
-        "tags": [
-          "Cars"
-        ],
+        "tags": ["Cars"],
         "summary": "Create a new car",
         "description": "Create a new car",
         "security": [
@@ -215,9 +203,7 @@
     },
     "/cars/images/{id}": {
       "post": {
-        "tags": [
-          "Cars"
-        ],
+        "tags": ["Cars"],
         "summary": "Upload car images",
         "description": "Upload car images",
         "security": [
